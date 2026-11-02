@@ -106,7 +106,7 @@
     <!-- Remote buttons that toggle WiZ lights on the home network (INPUT_KEY_SERVICE=1): any of them on turns them
          all off, all off turns them all on. Same key format as app_keys ("keycode:", "KEYCODE_NAME:" or
          "scan:scancode:"), then "all" or the lights' MACs separated by commas (one room). Local network only (UDP
-         38899), no cloud account. Find a light's MAC with getPilot (see backups/.../README.md). Leave empty to omit.
+         38899), no cloud account. Find a light's MAC with a getPilot UDP request to its IP. Leave empty to omit.
          MiTV-AXSO0 remote: Prime Video is scancode 400 (KEY_YELLOW, sent as BUTTON_5 to Xiaomi's PatchWall helper), the Mi button 580 (KEY_APPSELECT). -->
     <!-- Media volume steps per remote press while the key helper is on (INPUT_KEY_SERVICE=1). With the helper bound,
          Android 9 stops repeating a held volume button, so on a 0-100 volume each press moves this far instead.
@@ -114,8 +114,8 @@
     <integer name="volume_step">5</integer>
     <string-array name="light_keys" translatable="false">
         <item>scan:400:all</item>
-        <!-- Mi button: the bathroom (.110 colour + .112 white, WiZ room 25145925). -->
-        <item>scan:580:cc4085976412,cc4085671782</item>
+        <!-- Mi button: one room's lights only, by MAC (placeholders, put your own here). -->
+        <!-- <item>scan:580:a1b2c3d4e5f6,a1b2c3d4e5f7</item> -->
     </string-array>
 
     <!-- Show the Solar Hijri (Shamsi) date used in Iran and Afghanistan, e.g. "27 Mehr 1405", above the

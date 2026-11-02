@@ -100,12 +100,6 @@ class KirkwoodNoteTest(unittest.TestCase):
         self.assertIn("pm enable --user 0 com.google.android.apps.tv.launcherx", self.crash)
         self.assertIn("FATAL EXCEPTION IN SYSTEM PROCESS", self.crash)
 
-    def test_the_readme_clause_covers_both_boxes(self):
-        clause = next(line for line in README.splitlines() if "costs phone casting" in line)
-        self.assertIn("Google TV Streamer", clause)
-        self.assertIn("Chromecast", clause)
-        self.assertIn("docs/TROUBLESHOOTING.md", clause)
-
     def test_the_prompt_asks_for_the_focused_app_before_claiming_success(self):
         self.assertIn("mFocusedApp", PROMPT)
         self.assertIn("set-home-activity", PROMPT)

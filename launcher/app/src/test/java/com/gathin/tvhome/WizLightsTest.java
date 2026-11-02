@@ -12,8 +12,8 @@ import static org.junit.Assert.assertTrue;
 /** The WiZ toggle: any light on means switch all off; the setPilot message. */
 public class WizLightsTest {
 
-    private static final String ON = "{\"method\":\"getPilot\",\"env\":\"pro\",\"result\":{\"mac\":\"cc4085976412\",\"state\":true,\"dimming\":70}}";
-    private static final String OFF = "{\"method\":\"getPilot\",\"env\":\"pro\",\"result\":{\"mac\":\"444f8e3d5f18\",\"state\": false,\"dimming\":50}}";
+    private static final String ON = "{\"method\":\"getPilot\",\"env\":\"pro\",\"result\":{\"mac\":\"a1b2c3d4e5f6\",\"state\":true,\"dimming\":70}}";
+    private static final String OFF = "{\"method\":\"getPilot\",\"env\":\"pro\",\"result\":{\"mac\":\"a1b2c3d4e5f7\",\"state\": false,\"dimming\":50}}";
 
     @Test
     public void anyLightOnCounts() {
@@ -33,9 +33,9 @@ public class WizLightsTest {
     @Test
     public void lightKeysParseLikeAppKeys() {
         java.util.Map<Integer, String> scans = RemoteKeys.parseAppScancodes(
-                Arrays.asList("scan:400:all", "scan:580:444f8e3d5f18,cc4085976412"));
+                Arrays.asList("scan:400:all", "scan:580:a1b2c3d4e5f7,a1b2c3d4e5f6"));
         assertEquals("all", scans.get(400));
-        assertEquals("444f8e3d5f18,cc4085976412", scans.get(580));
+        assertEquals("a1b2c3d4e5f7,a1b2c3d4e5f6", scans.get(580));
     }
 
     @Test
