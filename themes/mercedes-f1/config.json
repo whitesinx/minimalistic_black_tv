@@ -1,0 +1,45 @@
+{
+  "dock_apps": [
+    "com.google.android.youtube.tv",
+    "com.netflix.ninja",
+    "com.vidio.android.tv",
+    "com.spotify.tv.android",
+    "com.amazon.amazonvideo.livingroom",
+    "com.disney.disneyplus",
+    "com.apple.android.music"
+  ],
+  "hidden_apps": [],
+  "columns": 6,
+  "app_library": true,
+  "dock_only": true,
+  "background_color": "#050607",
+  "wallpaper": true,
+  "ambient_glow": false,
+  "net_pill_ram": false,
+  "news_feed": "https://www.formula1.com/en/latest/all.xml",
+  "news_title": "F1 News · formula1.com",
+  "news_accent": "#00A19C",
+  "screensaver": "digital",
+  "youtube_preview": true,
+  "youtube_channels": [
+    "UC7_VGkwCoKfqh1eZEkzey3A",
+    "UCB_qr75-ydFVKSF9Dmo6izg",
+    "UCbX_TueacKEifdw8lAjARNQ",
+    "UC3rBdOAdLXhagcFtEnSAmQQ",
+    "UC3yFi2eTanFWEE3_ln3XoaQ",
+    "UC8rHUssNDJ9YEjfduAqJBmw"
+  ],
+  "dock_title": false,
+  "screensaver_quotes": [
+    "The art of maintaining a good relationship can be compared to sitting by a fireplace. If we sit too close for too long, we become hot and possibly burned. If we sit too far away, we cannot feel the warmth. — Haemin Sunim",
+    "The success rate for meeting the right person is one in ten. Only after you have met nine other people does one appear who you like and who also likes you back. — Haemin Sunim",
+    "We consider it good to be good to others, but don’t forget that you have a responsibility to be good to yourself first. — Haemin Sunim",
+    "Let there be spaces in your togetherness, and let the winds of the heavens dance between you. — Kahlil Gibran",
+    "Love one another, but make not a bond of love: let it rather be a moving sea between the shores of your souls. — Kahlil Gibran",
+    "Love does not consist in gazing at each other, but in looking outward together in the same direction. — Antoine de Saint-Exupéry",
+    "Immature love says: ‘I love you because I need you.’ Mature love says: ‘I need you because I love you.’ — Erich Fromm",
+    "The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed. — Carl Jung",
+    "The supreme happiness of life is the conviction that we are loved; loved for ourselves, or rather, loved in spite of ourselves. — Victor Hugo"
+  ],
+  "screensaver_quote_by": "Haemin Sunim"
+}

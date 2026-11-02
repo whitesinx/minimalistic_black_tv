@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Screensaver with screensaver "digital": a 24-hour clock alone on black, fixed in the middle (ClockScene moves it
+     by a few pixels each minute, too little to see, so the digits do not burn in), with an optional quote under it
+     (screensaver_quotes). -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000">
+
+    <View
+        android:id="@+id/dreamAmbient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/dreamContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="HH:mm"
+            android:format24Hour="HH:mm"
+            android:textColor="#CCFFFFFF"
+            android:textSize="96sp"
+            android:fontFamily="@font/outfit_light"
+            android:letterSpacing="0.02"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/dreamQuote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:maxWidth="560dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.25"
+            android:textColor="#8CFFFFFF"
+            android:textSize="17sp"
+            android:fontFamily="@font/outfit_light"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dreamQuoteBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textColor="#59FFFFFF"
+            android:textSize="12sp"
+            android:letterSpacing="0.2"
+            android:textAllCaps="true"
+            android:fontFamily="@font/outfit_regular"
+            android:visibility="gone" />
+    </LinearLayout>
+</FrameLayout>

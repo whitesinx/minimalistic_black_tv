@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Plain text top bar (config.xml minimal_top_bar): dim at rest, full white when focused. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:color="#FFFFFFFF" />
+    <item android:color="#80FFFFFF" />
+</selector>

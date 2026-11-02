@@ -1,0 +1,14 @@
+{
+  "dock_apps": ["com.google.android.youtube.tv", "com.netflix.ninja", "com.vidio.android.tv", "com.spotify.tv.android",
+                "com.amazon.amazonvideo.livingroom", "com.disney.disneyplus", "com.apple.android.music"],
+  "hidden_apps": [],
+  "columns": 6,
+  "app_library": true,
+  "background_color": "#E8638F",
+  "wallpaper": false,
+  "sky_intensity": 0,
+  "ambient_glow": false,
+  "cinematic_home": false,
+  "white_icons": true,
+  "net_pill_ram": false
+}

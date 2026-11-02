@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Prayer-time screensaver (PrayerScene, config.xml prayer_times): a 24-hour clock in the centre of a pure black
+     screen with today's five prayer times under it. No glow, no wallpaper. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000">
+
+    <LinearLayout
+        android:id="@+id/prayerContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Both formats HH:mm: always 24-hour, whatever the TV's own setting. -->
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="HH:mm"
+            android:format24Hour="HH:mm"
+            android:textColor="#E6FFFFFF"
+            android:textSize="150sp"
+            android:fontFamily="@font/outfit_extralight"
+            android:letterSpacing="-0.03"
+            android:includeFontPadding="false" />
+
+        <LinearLayout
+            android:id="@+id/prayerRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</FrameLayout>
